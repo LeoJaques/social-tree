@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+html {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-bg-color);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+:root {
+  --hue: 270;
+  --body-bg-color: hsl(var(--hue), 60%, 98%);
+  --primary-color: hsl(var(--hue), 50%, 73%);
+}
+
+#devPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#devPhoto img {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+
+  padding: 2px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+#devPhoto span {
+  color: var(--primary-color);
+  margin-top: 22px;
+}
+
+.projectLinks {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectLinks .project {
+  margin-top: 16px;
+  width: 326px;
+  height: 49px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 12px 0; */
+  text-transform: uppercase;
+  transition: ease 300ms;
+}
+
+.projectLinks .project:hover {
+  background-color: var(--primary-color);
+  color: var(--body-bg-color);
+}
+
+.socialicons {
+  margin-top: 68px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 29px;
+}
+
+.socialicons .social-icon {
+  transform: scale(0.9);
+  transition: ease 300ms;
+}
+
+.socialicons .social-icon:hover {
+  transform: scale(1);
+}
